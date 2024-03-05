@@ -18,7 +18,7 @@ const WorkCard = () => {
 
       return (
         
-        <div className="flex flex-wrap flex-col justify-center items-center  gap-4 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg" > 
+        <div className="flex flex-wrap flex-col justify-center items-center gap-4 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg" > 
       {/* <div className='lg:w-[400px] w-full ' key={project.name}> */}
         {/* <div className='block-container w-12 h-12'> */}
           {/* <div className={`btn-back rounded-xl ${project.theme}`} /> */}
@@ -31,11 +31,11 @@ const WorkCard = () => {
           {/* </div> */}
         {/* </div> */}
 
-        <div className='mt-5 flex flex-col h-[370px] w-[380px]'>
+        <div className='mt-5 flex flex-col h-[370px] w-[300px] sm:h-[260px]  overflow-scroll'>
           <h4 className='text-2xl font-poppins font-semibold'>
             {project.name}
           </h4>
-          <p className='mt-2 text-slate-500'>{project.description}</p>
+          <p className='mt-2 text-slate-500 overflow-scroll'>{project.description}</p>
           <div className='mt-5 flex items-center gap-2 font-poppins'>
             <Link
               to={project.link}

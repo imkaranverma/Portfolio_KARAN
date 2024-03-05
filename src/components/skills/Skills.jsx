@@ -224,10 +224,10 @@ const Skills = ({ darkMode }) => {
         </div>
 
         {/* icons */}
-        <div
+        {/* <div
           data-aos="fade-up"
           data-aos-duration="1200"
-          className=" container m-auto flex items-center justify-center mt-8 gap-8 md:gap-5"
+          className="container m-auto flex items-center justify-center mt-8 gap-6 md:gap-5 md:w-screen"
         >
           <img
             className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
@@ -266,7 +266,7 @@ const Skills = ({ darkMode }) => {
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/javascript--v1.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/nodejs.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/24/null/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png"/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
