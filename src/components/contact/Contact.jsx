@@ -22,9 +22,9 @@ const Contact = () => {
             <div 
             data-aos="zoom-in"
             >
-              <h1 className="text-5xl font-bold sm:text-3xl">You Need</h1>
+              <h1 className="text-5xl font-bold sm:text-3xl">Want to say something?</h1>
               <h3 className="text-xl sm:text-lg">
-                Beautiful design for your website leave a request
+                Write your message here and let's have some chit chat.
               </h3>
             </div>
           </div>
@@ -50,13 +50,13 @@ const Contact = () => {
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="email"
-              placeholder="e.g. example@email.com"
+              placeholder="e.g. kaaran@email.com"
               name=""
             />
             <input
               className="px-3 shadow-[0_0_16px_0px_rgba(0,0,0,0.1)] p-2 rounded-lg w-full"
               type="text"
-              placeholder="e.g. John Doe"
+              placeholder="e.g. XYZ"
               name=""
             />
             <textarea
