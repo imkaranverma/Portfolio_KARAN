@@ -19,12 +19,9 @@ const Work = () => {
         </p>
       </div>
       {/* card */}
-      <div className="card-wrapper mx-auto w-[100%] sm:w-full mt-5">
-        <div className="card-box flex flex-row overflow-scroll gap-10 md:grid-cols-2 md:w-full  sm:gap-8 sm:grid-cols-1 sm:space-y-0">
-        {/* grid grid-cols-3 space-y-5 space-x-1 */}
-          <WorkCard/> 
-
-          
+      <div className="card-wrapper mx-auto w-[90%] sm:w-fit mt-5">
+        <div className="card-box grid grid-cols-3 space-y-5 space-x-5 w-full md:grid-cols-2 sm:gap-8 sm:grid-cols-1 sm:space-y-0 ">
+          <WorkCard />
         </div>
       </div>
     </div>
