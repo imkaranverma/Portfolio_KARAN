@@ -1,21 +1,23 @@
 
+// import Project from '../assets/Project.png';
+// import {project2} from '../assets/Project2.png';
 
 
-export const data = [
-  {
-      iconUrl: "",
-      theme: 'btn-back-red',
-      name: 'Event-Planner',
-      description: 'I developed a feature-rich MERN project, an event planning website, with a focus on user-friendly design and advanced functionalities. The platform includes a customizable registration form, MongoDB for audience data management, a secure Stripe payment gateway, and unique QR code generation for digital tickets. Utilized React for frontend, Node and Express for backend, and integrated various libraries such as useFormik, HTML2Canvas, Yup, QRCode, and Stripe. This project showcases my proficiency in full-stack development, database management, and integration of third-party APIs.',
-      link: 'https://github.com/imkaranverma/Event_project',
-  },
-  {
-      iconUrl: "",
-      theme: 'btn-back-red',
-      name: 'Simple Web Note App',
-      description: 'I created a minimalist note web app using HTML, CSS, and JavaScript, focusing on simplicity and essential features. The application allows users to create and save notes locally, offering a seamless and intuitive experience. Leveraging HTML for structure, CSS for styling, and JavaScript for functionality, I prioritized a user-friendly interface. This project demonstrates my proficiency in front-end web development, emphasizing clean design, and efficient local data storage for a straightforward note-taking solution.',
-      link: 'https://simple-note-app-karan.netlify.app/',
-  }
+// export const data = [
+//   {
+//       iconUrl: "",
+//       theme: 'btn-back-red',
+//       name: 'Event-Planner',
+//       description: 'I developed a feature-rich MERN project, an event planning website, with a focus on user-friendly design and advanced functionalities. The platform includes a customizable registration form, MongoDB for audience data management, a secure Stripe payment gateway, and unique QR code generation for digital tickets. Utilized React for frontend, Node and Express for backend, and integrated various libraries such as useFormik, HTML2Canvas, Yup, QRCode, and Stripe. This project showcases my proficiency in full-stack development, database management, and integration of third-party APIs.',
+//       link: 'https://github.com/imkaranverma/Event_project',
+//   },
+//   {
+//       iconUrl: "",
+//       theme: 'btn-back-red',
+//       name: 'Simple Web Note App',
+//       description: 'I created a minimalist note web app using HTML, CSS, and JavaScript, focusing on simplicity and essential features. The application allows users to create and save notes locally, offering a seamless and intuitive experience. Leveraging HTML for structure, CSS for styling, and JavaScript for functionality, I prioritized a user-friendly interface. This project demonstrates my proficiency in front-end web development, emphasizing clean design, and efficient local data storage for a straightforward note-taking solution.',
+//       link: 'https://simple-note-app-karan.netlify.app/',
+//   }
   // ,
   // {
   //     iconUrl: "",
@@ -59,32 +61,33 @@ export const data = [
   //     description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
   //     link: 'https://github.com/adrianhajdin/project_ai_summarizer',
   // }
-];
-
-// export const data = [
-//   {
-//     id: 2,
-//     img: 'https://i.postimg.cc/Bv75CLyN/4167022.jpg',
-//     title: "Simple Note App",
-//     link: "https://simple-note-app-karan.netlify.app/",
-//     git: "",
-//   },
-//   {
-//     id: 1,
-//     img: "../assets/project1.png",
-//     title: "Event Planner",
-//     desc: "",
-//     link: "",
-//     git: "",
-//   }
-//   // ,
-//   // {
-//   //   id: 3,
-//   //   img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
-//   //   title: "Music Player",
-//   //   desc: "",
-//   //   link: "",
-//   //   git: "",
-//   // }
-  
 // ];
+
+export const data = [
+  {
+    id: 2,
+    img: "/Project1.png",
+    title: "Simple Note App",
+    desc: "Designed a minimalist note web app using HTML, CSS, and JavaScript, prioritizing simplicity and essential features. Offers a seamless, intuitive experience with local note creation and storage, showcasing proficiency in clean front-end development.",
+    link: "https://simple-note-app-karan.netlify.app/",
+    git: "",
+  },
+  {
+    id: 1,
+    img: "/Project.png",
+    title: "Event Planner",
+    desc: "Created a MERN event planning site with user-friendly design, customizable registration, MongoDB, secure Stripe payments, and QR code generation. Proficient in React, Node, and Express, showcasing full-stack development with key libraries.",
+    link: "",
+    git: "https://github.com/imkaranverma/Event_project",
+  }
+  // ,
+  // {
+  //   id: 3,
+  //   img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
+  //   title: "Music Player",
+  //   desc: "",
+  //   link: "",
+  //   git: "",
+  // }
+  
+];
