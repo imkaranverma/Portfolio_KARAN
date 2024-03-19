@@ -1,8 +1,27 @@
 import React from 'react'
+import Plx from "react-plx";
+
+
+
+// const parallaxData = [
+//   {
+//     start: self,
+//     duration: ".containerPlex",
+//     properties: [
+//       {
+//         startValue: 0.5,
+//         endValue: 1,
+//         property: "scale",
+//       },
+//     ],
+//   },
+// ];
+
 
 const Aboutme = () => {
   return (
-    <div className='container m-auto  mt-16'>
+    // <Plx className='containerPlex' parallaxData={parallaxData}>
+    <div className='container m-auto  mt-16' data-aos="fade-up">
       <div>
       {/* <h1 
       // data-aos="fade-up"
@@ -30,6 +49,7 @@ Join me on this journey through my portfolio, where curiosity meets code, and le
 </div>
 </div>
     </div>
+    // </Plx>
   )
 }
 

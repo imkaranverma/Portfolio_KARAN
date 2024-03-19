@@ -1,6 +1,7 @@
 import React from "react";
 import ProgressBar from "../../chip/ProgressBar";
 import SkillBox from "../../chip/SkillBox";
+import Tilt from 'react-parallax-tilt';
 
 import { IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 
@@ -116,26 +117,33 @@ const Skills = ({ darkMode }) => {
           
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
+              <Tilt>
               <SkillBox
                 logo={<IoLogoNodejs />}
                 black={"black"}
                 white={"white"}
                 skill={"Node Js"}
-              />
+                />
+              </Tilt>
+                <Tilt>
               <SkillBox
                 logo={<SiMongodb />}
                 black={"white"}
                 white={"black"}
                 skill={"MongoDB"}
-              />
+                />
+                </Tilt>
             </div>
             <div className="last2 flex flex-col gap-10">
+              <Tilt>
               <SkillBox
                 logo={<SiExpress />}
                 black={"white"}
                 white={"black"}
                 skill={"Express Js"}
-              />
+                />
+                </Tilt>
+                <Tilt>
               <SkillBox
                 className=""
                 logo={
@@ -144,7 +152,8 @@ const Skills = ({ darkMode }) => {
                 black={"black"}
                 white={"white"}
                 skill={"C++"}
-              />
+                />
+                </Tilt>
              
             </div>
           </div>

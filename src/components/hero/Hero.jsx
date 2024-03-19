@@ -12,9 +12,7 @@ import resumePDF from "../../assets/Resume.pdf";
 import { motion } from "framer-motion";
 import { FiMousePointer } from "react-icons/fi";
 import "../VanillaTilt";
-
-
-
+import Tilt from 'react-parallax-tilt';
 
 
 
@@ -22,47 +20,6 @@ import "../VanillaTilt";
 // const HALF_ROTATION_RANGE = ROTATION_RANGE / 2;
 
 const Hero = () => {
-
-
-
-  // const ref = useRef(null);
-
-  // const [rotateX, setRotateX] = useState(0);
-  // const [rotateY, setRotateY] = useState(0);
-  // const [isHovered, setIsHovered] = useState(false);
-
-  // const handleMouseMove = (e) => {
-  //   if (!ref.current  || !isHovered) return;
-
-  //   const rect = ref.current.getBoundingClientRect();
-
-  //   const width = rect.width;
-  //   const height = rect.height;
-
-  //   const mouseX = (e.clientX - rect.left) * ROTATION_RANGE;
-  //   const mouseY = (e.clientY - rect.top) * ROTATION_RANGE;
-
-  //   const rY = mouseX / width - HALF_ROTATION_RANGE;
-  //   const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
-
-  //   setRotateX(rX);
-  //   setRotateY(rY);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   if (!ref.current) return;
-  //   setRotateX(0);
-  //   setRotateY(0);
-  //   setIsHovered(false);
-  // };
-
-  // const handleMouseMove = (e) => {
-  //   console.log(e.target.getBoundingClientRect());
-  // };
-
-  // const handleMouseEnter = () => {
-  //   setIsHovered(true);
-  // };
 
 
   return (
@@ -159,14 +116,16 @@ const Hero = () => {
         </div>
         <div className="right  top-5 flex-1 flex items-center justify-center md:items-end sm:items-end">
           <div className="relative h-[88%] w-fit flex items-center sm:items-end">
+           <Tilt>
             <img
             data-aos="fade-up"
               className="h-[90%]  w-full object-cover md:h-[95%] md:m-auto sm:m-0"
-              src='/Potrait.png'
+              src='/Potrait_old.png'
               // src\assets\Potrait.png
               // src={mine}
               alt="mine"
             />
+            </Tilt>
             {/* <div className=" absolute bottom-10 md:bottom-3 right-8 md:right-2"> */}
               {/* <div data-aos="zoom-in" data-aos-duration="1000"  className=" relative cursor-pointer">
                 <img
