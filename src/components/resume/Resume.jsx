@@ -79,7 +79,7 @@ const Resume = () => {
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-gray-500">
                
-During my internship, I accomplished a mini-project that encapsulates my growth, featuring the submission of five impactful research papers in Web Development and the successful completion of a MOOC course in [Course Focus]. This project underscores my commitment to staying abreast of industry trends, continuous learning, and translating theoretical knowledge into practical outcomes.
+During my internship, I accomplished a mini-project that encapsulates my growth, featuring the submission of five impactful research papers in Web Development and the successful completion of a MOOC course in Frontend Development. This project underscores my commitment to staying abreast of industry trends, continuous learning, and translating theoretical knowledge into practical outcomes.
                 </p>
               </div>
             </div>

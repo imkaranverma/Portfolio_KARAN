@@ -82,6 +82,15 @@ export const data = [
   }
   // ,
   // {
+  //   id: 1,
+  //   img: "/Project.png",
+  //   title: "Event Planner",
+  //   desc: "Created a MERN event planning site with user-friendly design, customizable registration, MongoDB, secure Stripe payments, and QR code generation. Proficient in React, Node, and Express, showcasing full-stack development with key libraries.",
+  //   link: "",
+  //   git: "https://github.com/imkaranverma/Event_project",
+  // }
+  // ,
+  // {
   //   id: 3,
   //   img: 'https://i.postimg.cc/wBjcJcW7/5890625.jpg',
   //   title: "Music Player",

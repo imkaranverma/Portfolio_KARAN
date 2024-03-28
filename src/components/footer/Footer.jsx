@@ -3,6 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className=" bg-yellow-400 h-full flex flex-col gap-8 items-center justify-between p-10 sm:p-7">
         <h2 
         data-aos="zoom-out"
-         className=" font-bold text-5xl sm:text-3xl">Let's Talk</h2>
+         className=" font-bold text-5xl sm:text-3xl">Let's Connect</h2>
         <div className=" flex items-center justify-center gap-8 sm:gap-5">
           {/* <a 
           data-aos="fade-up" data-aos-duration="1000"
@@ -21,7 +22,7 @@ const Footer = () => {
             <FaTelegramPlane className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>Telegram</p>
           </a> */}
-          <a 
+          {/* <a 
           data-aos="fade-up" data-aos-duration="1200"
 
             href=""
@@ -29,7 +30,7 @@ const Footer = () => {
           >
             <IoLogoWhatsapp className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>WhatsApp</p>
-          </a>
+          </a> */}
           <a 
           data-aos="fade-up" data-aos-duration="1200"
 
@@ -47,6 +48,15 @@ const Footer = () => {
           >
             <RiInstagramFill className=" text-black text-3xl hover:scale-125 cursor-pointer" />
             <p>Instagram</p>
+          </a>
+          <a 
+          data-aos="fade-up" data-aos-duration="1400"
+
+            href="https://leetcode.com/iamkaranverma/"
+            className="box font-medium text-white  flex items-center justify-center flex-col"
+          >
+            <SiLeetcode className=" text-black text-3xl hover:scale-125 cursor-pointer" />
+            <p>Leetcode</p>
           </a>
         </div>
         <div className="sm:text-[12px]">

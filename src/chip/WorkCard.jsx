@@ -5,93 +5,63 @@ import { RxExternalLink } from "react-icons/rx";
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import  arrow   from '../assets/arrow.svg';
+import { motion , useTransform , useScroll} from "framer-motion";
+import  { useRef} from "react";
 
 const WorkCard = () => {
   const reversedData = [...data].reverse();
 
+  // const targetRef = useRef<HTMLDivElement | null>(null);
+  // const targetRef = useRef<HTMLDivElement>();
+  const targetRef = useRef();
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+
+  // adjust -x% according to number of workcard.......
+ const x =  useTransform(scrollYProgress , [ 0 , 1] , ["0%"  , "-55%"]);
+
+
   return (
 
-// {/* <>
-//     {/* <div className=' my-20 '> */}
-//     {/* <div className='flex flex-wrap gap-16 my-20 '> */}
-//     {reversedData.map((project) => {
-
-//       return (
-        
-//         <div className="flex flex-wrap flex-col justify-center items-center gap-4 border-2 border-yellow-400 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg" > 
-//       {/* <div className='lg:w-[400px] w-full ' key={project.name}> */}
-//         {/* <div className='block-container w-12 h-12'> */}
-//           {/* <div className={`btn-back rounded-xl ${project.theme}`} /> */}
-//           {/* <div className='btn-front rounded-xl flex justify-center items-center'> */}
-//             {/* <img
-//               src={project.iconUrl}
-//               alt='threads'
-//               className='w-1/2 h-1/2 object-contain'
-//             /> */}
-//           {/* </div> */}
-//         {/* </div> */}
-
-//         <div className='mt-5 flex flex-col h-[370px] w-[300px] sm:h-[260px]  overflow-scroll'>
-//           <h4 className='text-2xl font-poppins font-semibold'>
-//             {project.name}
-//           </h4>
-//           <p className='mt-2 text-slate-500 overflow-scroll'>{project.description}</p>
-//           <div className='mt-5 flex items-center gap-2 font-poppins'>
-//             <Link
-//               to={project.link}
-//               target='_blank'
-//               rel='noopener noreferrer'
-//               className='font-semibold text-blue-600'
-//               >
-//               Live Link
-//             </Link>
-//             <img
-//               src={arrow}
-//               alt='arrow'
-//               className='w-4 h-4 object-contain'
-//               />
-//           </div>
-//         </div>
-//       {/* </div> */}
-//       </div>
-//     )
-//   }
-//     )
-//   }
-//     {/* </div> */}
-    
-//     </>
-//      */}
-    
-
     <>
+
+
+{/* CHANGE h-[X * 100vh]...............X here depending on the number of work card i have to show , for 2 - 200vh , 3 - 300vh and so on... */}
+    <section ref={targetRef} className="relative h-[200vw] w-[85vw]">
+      <div className="sticky top-9 flex h-screen items-center overflow-hidden">
+
+<motion.div style={ {x} } className="flex gap-10">
+{/* <motion.div className="flex gap-10"> */}
+
       {reversedData.map((data) => {
         return (
           <div
-            data-aos="zoom-in"
-            key={data.id}
-            className="flex flex-col justify-center items-center gap-4"
+          data-aos="zoom-in"
+          key={data.id}
+          className="flex flex-col justify-center items-center gap-4 w-[100vw]"
           >
             <POPUP className="img-content relative">
              
             {/* <div className="relative h-[280px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto">
   <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4">
-    <h2 className="text-2xl font-bold text-black">{data.title}</h2>
-    <p className="text-sm text-black">{data.desc}</p>
+  <h2 className="text-2xl font-bold text-black">{data.title}</h2>
+  <p className="text-sm text-black">{data.desc}</p>
   </div>
 </div> */}
 
-              <div className="h-[280px] w-[380px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
+              <div className="h-[380px] w-[480px] hover:scale-125 transition duration-500 cursor-pointer shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] sm:bg-cover mx-auto ">
                 <img
                   src={data.img}
                   alt={data.title}
                   className=" object-fit w-full h-full hover:scale-125 transition duration-500 cursor-pointer"
-                />
+                  />
               </div>
 
               <div
-                className={` popup w-full  h-[280px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}
-              >
+                className={` popup w-full  h-[380px] shadow-xl rounded-md overflow-hidden sm:h-[260px] sm:w-[92%] p-4`}
+                >
                 <p className=" text-gray-900 text-base leading-[1.4] text-justify w-[90%]">
                   {data.desc}
                 </p>
@@ -100,7 +70,7 @@ const WorkCard = () => {
                     to={data.link}
                     target="_blank"
                     className="  mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
-                  >
+                    >
                     <RxExternalLink className=" text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Demo</p>
                   </Link>
@@ -109,7 +79,7 @@ const WorkCard = () => {
                     to={data.git}
                     target="_blank"
                     className="  mt-3 rounded-md shadow-md p-1 px-2 flex gap-2 items-center justify-center font-medium"
-                  >
+                    >
                     <AiOutlineGithub className="  text-black bg-white rounded-full border  w-[35px] h-[35px] p-2" />
                     <p className=" text-black">Code</p>
                   </Link>
@@ -122,13 +92,17 @@ const WorkCard = () => {
           </div>
         );
       })}
+      </motion.div>
+      </div>
+      </section>
     </>
   );
 };
 
 export default WorkCard;
 
-const POPUP = styled.div`
+const POPUP = styled.div
+`
   position: relative;
   img {
     &:hover {
