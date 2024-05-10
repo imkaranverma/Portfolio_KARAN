@@ -29,7 +29,7 @@ const WorkCard = () => {
 
 
 {/* CHANGE h-[X * 100vh]...............X here depending on the number of work card i have to show , for 2 - 200vh , 3 - 300vh and so on... */}
-    <section ref={targetRef} className="relative h-[200vw] w-[85vw]">
+    <section ref={targetRef} className="relative h-[200vw] w-[100vw]">
       <div className="sticky top-9 flex h-screen items-center overflow-hidden">
 
 <motion.div style={ {x} } className="flex gap-10">
